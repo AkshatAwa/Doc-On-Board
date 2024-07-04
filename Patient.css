@@ -1,0 +1,101 @@
+form{
+    height: 100%;
+}
+.pimg {
+    width: 60%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.pbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40%;
+    height: 100vh;
+}
+.pinsidebox{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(93, 214, 147);
+    width: 90%;
+    height: 90vh;
+    border-radius: 5px;
+}
+.pdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.pheading{
+    display: flex;
+    justify-content: center;
+    font-family: "Comfortaa","sans-serif";
+    font-size: 25px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+.pname {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* vertically center the text */
+    height: 100px; /* adjust height as needed */
+    font-size: 12px;
+    gap: 5rem;
+}
+.pinput{
+    height: 3rem;
+    border-radius:5px;
+    padding: 5px;
+}
+.selectdoc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+}
+#page,#pnum,#pemail{
+    width: 80%;
+    height: 3rem;
+    padding: 10px;
+}
+.sd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comfortaa","sans-serif";
+}
+.selection{
+    display: flex;
+    justify-content: center;
+}
+.label{
+    font-family: "Comfortaa", "sans-serif";
+}
+select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 5px;
+    overflow-y: auto; /* Add overflow-y property for vertical scrolling */
+}
+.pbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 3rem;
+    position: relative;
+    top: 3rem;
+    margin: auto;
+    font-family: "Comfortaa", "sans-serif";
+}

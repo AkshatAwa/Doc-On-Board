@@ -1,0 +1,102 @@
+.navbar{
+    display: flex;
+    position: absolute;
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    overflow-y: hidden;
+}
+.logop{
+    position: absolute;
+    font-family: "Comfortaa";
+    left: 5rem;
+    color: #fff;
+}
+.logo{
+    object-fit: cover;
+    height: 4.5rem;
+    width: 3rem;
+}
+.desktopMenu{
+    display: flex;
+    margin-left: 10rem;
+}
+.items{
+    position: relative;
+    margin: 1rem;
+    cursor: pointer;
+    font-family: "Comfortaa","sans-serif";
+    color: #fff;
+}
+.items:hover{
+    color: rgb(0, 0, 0);
+    transition: all ease 0.5s;
+}
+.items:active{
+    color: rgb(126, 175, 248);
+    width: 100%;
+}
+.contactBtn{
+    background-color: #fff;
+    border-radius: 17px;
+    width: 8rem;
+    height: 3rem;
+    font-size: 15px;
+    margin: auto 3rem;
+}
+.contactBtn:hover{
+    cursor: pointer;
+}
+.menulogo{
+    display: none;
+    object-fit: cover;
+    height: 1.4rem;
+}
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 7rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+.listitems{
+    padding: 0.5rem 5rem;
+    margin: 0.25rem;
+    background-color: rgb(30, 30, 30); 
+}
+.listitems:hover{
+    cursor: pointer;
+    color: rgb(126, 175, 248);
+}
+@media screen and (max-width: 780px){
+    .menulogo{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .contactBtn{
+        display: none;
+    }
+}
+@media screen and (max-width: 200px){
+    .menulogo{
+        display: flex;
+    }
+    .navbar{
+        width: 135vw;
+    }
+}

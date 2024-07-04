@@ -1,0 +1,77 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    filter: blur(5px); /* Apply blur effect */
+    border-radius: 10px;
+    animation: roam 20s linear infinite; /* Adjust duration as needed */
+}
+
+.block1 {
+    top: 20%;
+    left: 10%;
+}
+
+.block2 {
+    top: 40%;
+    left: 30%;
+}
+
+.block3 {
+    top: 60%;
+    left: 50%;
+}
+
+.block4 {
+    top: 30%;
+    left: 70%;
+}
+
+.block5 {
+    top: 50%;
+    left: 90%;
+}
+
+@keyframes roam {
+    0% {
+        transform: translate(-10%, -90%);
+    }
+    25% {
+        transform: translate(-20%, -80%) translate(100vw, 50px);
+    }
+    50% {
+        transform: translate(-10%, -60%) translate(200vw, 100px);
+    }
+    75% {
+        transform: translate(-40%, -50%) translate(100vw, 150px);
+    }
+    100% {
+        transform: translate(-90%, -50%);
+    }
+}
+.blankbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: #fff;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 12px;
+}
+.SelectStatement{
+    align-items: center;
+    display: flex;
+    font-family: "Comfortaa","sans-serif";
+}
